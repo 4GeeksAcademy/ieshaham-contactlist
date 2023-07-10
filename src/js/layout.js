@@ -2,8 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
-import ContactListPage from "./pages/ContactListPage.jsx";
-
+import ContactListPage from "./Pages/ContactListPage.jsx";
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 
