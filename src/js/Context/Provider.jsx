@@ -1,6 +1,6 @@
 import React, { createContext, useReducer } from 'react';
 
-import { ADD_CONTACT } from '../context/contactListActions.js'
+import { ADD_CONTACT } from './actions/ContactListActions.js'
 
 export const Context = createContext();
 
@@ -20,10 +20,10 @@ const reducer = (state, action) => {
             }
         }
 
-         case EDIT_CONTACT: {
-             return {
+        case EDIT_CONTACT: {
+            return {
 
-         }
+            }
         }
     }
 }
@@ -31,10 +31,11 @@ const reducer = (state, action) => {
 const initialState = {
     contacts: [
         {
-            name: 'Iesha Ham',
-            email: 'ieshaistesting@gmail.com',
-            phone: 'xxx-xxx-xxxxx',
-            addresss: 'test addresss'
+     
+            name: 'Mike Anamendolla',
+            addresss: '5842 Hillcrest RD',
+            phone: '(870) 288-4149',
+            email: 'mike.ana@example.com',
         }
     ]
 }
