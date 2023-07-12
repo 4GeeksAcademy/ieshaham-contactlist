@@ -1,7 +1,7 @@
-/* 
-    General Styles
-*/
-.right-align {
+
+   
+
+ .right-align {
     display: flex;
     justify-content: flex-end;
     margin-right: 150px;
@@ -27,11 +27,55 @@ img{
 
 
 .fa-pencil-alt{
-    margin-left: 900px;
+    margin-left: 500px;
   display: inline-block;
   margin-right: 40px;
   
 }
 .fa-trash-alt{
-    margin-right: 40px;
+    margin-right: 40px;}
+
+
+  #name{
+    width:400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 400px;
+  }
+
+  #address{
+    width:400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 400px;
+  }
+
+  #email{
+    width:400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 400px;
+  }
+
+  #phone{
+    width:400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 400px;
+  }
+
+
+  button{
+    margin-left: 300px;
+    margin-top: 50px;
+    width: 170px;
+  }
+
+label{
+  margin-left: 400px;
+  margin-top: 10px;
 }

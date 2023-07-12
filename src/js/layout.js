@@ -2,11 +2,13 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
-import ContactListPage from "./Pages/ContactListPage.jsx";
+import ContactListPage from "./pages/ContactListPage.jsx";
+import AddContact from "./pages/AddContact.jsx";
+
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 
-import ContextProvider from "./Context/Provider.jsx";
+import ContextProvider from "./context/Provider.jsx";
 
 //create your first component
 const Layout = () => {
@@ -22,8 +24,8 @@ const Layout = () => {
 						<Navbar />
 						<Routes>
 							<Route path="/" element={<ContactListPage />} />
-							{/* <Route path="/demo" element={<Demo />} />
-						<Route path="/single/:theid" element={<Single />} /> */}
+							<Route path="/addContact" element={<AddContact />} />
+
 							<Route path="*" element={<h1>Not found!</h1>} />
 						</Routes>
 						<Footer />
