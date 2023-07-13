@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Context } from '../context/Provider.jsx';
 import { contactListActions } from '../context/actions/contactListActions.js';
+import { Link } from 'react-router-dom';
 
 const AddContact = () => {
   const { dispatch } = useContext(Context);
@@ -8,11 +9,7 @@ const AddContact = () => {
   const handleAddContact = (event) => {
     event.preventDefault();
 
-
-    const name = event.target.elements.name.value;
-    const address = event.target.elements.address.value;
-    const phone = event.target.elements.phone.value;
-    const email = event.target.elements.email.value;
+?
 
 
     dispatch(contactListActions.ADD_CONTACT({
@@ -44,8 +41,11 @@ const AddContact = () => {
         <label htmlFor="email">Email:</label>
         <input type="email" id="email" name="email" required />
       </div>
+
       <button type="submit">Add Contact</button>
+      <Link to="/">
       <button>Go back</button>
+      </Link>
     </form>
   );
 };
